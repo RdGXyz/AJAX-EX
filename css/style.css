@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Roboto';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #0055ff;
+}
+
+header .title {
+    font-size: 5rem;
+    color: #fff;
+}
+
+header div #qtd {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    font-size: 2rem;
+    height: 100%;
+}
+
+header div #qtd option {
+    font-size: 2rem;
+}
+
+header div #btn-mv {
+    font-size: 2rem;
+    margin-left: 25px;
+    padding: 10px;
+    height: 100%;
+}
+
+main{
+    padding: 5rem;
+}
+
+main .container {
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .container .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px #00000038;
+    flex-basis: 200px;
+    flex-grow: 1;
+    height: 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: all 100ms ease-in-out;
+}
+
+main .container .card:hover {
+    transform: rotate(-3deg) scale(1.08 );
+    box-shadow: 0px 0px 20px #0055ff99;
+}
+
+main .container .card .card-image {
+    height: 100px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+main .container .card .card-text .id{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: black;
+    background: #0055ff38;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+
+main .container .card .card-text .name{
+    font-size: 2.4rem;
+}
+
+@media (max-width: 800px) {
+    * {
+        font-size: 8px;
+    }
+
+    header {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    header .title{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header div {
+        width: 100%;
+        text-align: center;
+    }
+
+    header div #qtd {
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+    }
+    
+    header div #btn-mv {
+        display: inline-block;
+        min-width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    main div.container {
+        gap: 30px;
+    }
+}
